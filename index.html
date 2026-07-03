@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chat Fahri</title>
+</head>
+<body>
+<h1>Chat Fahri</h1>
+
+<input type="text" id="pesan">
+<button onclick="kirim()">Kirim</button>
+
+<div id="chat"></div>
+
+<script>
+function kirim() {
+  let pesan = document.getElementById("pesan").value;
+  document.getElementById("chat").innerHTML +=
+  "<p><b>Pengunjung:</b> " + pesan + "</p>";
+}
+</script>
+
+</body>
+</html>
